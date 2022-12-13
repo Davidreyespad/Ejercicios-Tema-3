@@ -1,4 +1,4 @@
-const url = "https://formsubmit.co/ajax/jperric300@iesmartinezm.es";
+const url = "https://formsubmit.co/ajax/mmarrui1802@iesmartinezm.es";
 const form = document.querySelector(".miFormulario");
 const post = (url, body) => fetch(url, { method: "POST", body });
 form.addEventListener("submit", function (ev) {
