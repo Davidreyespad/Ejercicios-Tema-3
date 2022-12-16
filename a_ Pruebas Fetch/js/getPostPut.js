@@ -67,8 +67,8 @@ headers: {
 .then(response => response.json())
 .then(json => console.log(json)) */
 
-fetch("https://jsonplaceholder.typicode.com/todos/1", {
-method: "DELETE"
-})
-.then(response => response.json())
-.then(console.log)
+fetch("http://localhost:3000/todos/5", {
+    method: "DELETE"
+    })
+    .then(response => response.json())
+    .then(json => console.log(json))
