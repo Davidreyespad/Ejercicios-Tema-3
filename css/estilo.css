@@ -1,0 +1,17 @@
+.titulo{
+    background-color: antiquewhite;
+    color: green;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div{
+    background-color: skyblue;
+    color: white;
+    margin-top: 1px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
