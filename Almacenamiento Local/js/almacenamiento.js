@@ -9,7 +9,7 @@ function checkCookie() {
     contador = parseInt(contador) + 1;
     setCookie("contador", contador, 365);
     p1.textContent =
-      "Cookies: " + contador + "ª visita";
+      "Cookies: Ha visitado la página " + contador + " veces";
   } else {
     contador = 0;
     if (contador !== "" && contador !== null) {
@@ -47,7 +47,7 @@ const checkLS = () => {
   if (localStorage.getItem("contador")) {
     let cont = parseInt(localStorage.getItem("contador"));
     localStorage.setItem("contador", cont + 1);
-    p2.textContent = "LocalStorage: " + cont + "ª visita";
+    p2.textContent = "LocalStorage: Ha visitado la página " + cont + " veces";
   } else {
     localStorage.setItem("contador", 0);
   }
@@ -61,7 +61,7 @@ const checkSS = () => {
     if (sessionStorage.getItem("contador")) {
       let cont = parseInt(sessionStorage.getItem("contador"));
       sessionStorage.setItem("contador", cont + 1);
-      p3.textContent = "SessionStorage: " + cont + "ª visita";
+      p3.textContent = "SessionStorage: Ha visitado la página " + cont + " veces";
     } else {
         sessionStorage.setItem("contador", 0);
     }
