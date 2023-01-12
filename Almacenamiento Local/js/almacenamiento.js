@@ -70,15 +70,15 @@ const checkSS = () => {
   window.addEventListener("load", checkSS);
  
  
-// borrar al darle al botón
+//borrar al darle al botón
 let boton = document.querySelector("#boton");
  
-// borrar cookies
+//borrar cookies
 function deleteCookie(cname) {
   document.cookie = cname+'=; expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';
 }
  
-// todos al dar al boton
+//todos al dar al boton
 const borrar = () => {
   deleteCookie("contador");
   localStorage.removeItem("contador"); // borrar local
